@@ -23,7 +23,7 @@ getName().then((res) => {
     Promise.all(pokemonName)
     .then((res) => {
         res.forEach((p) => {
-            pkmData = {
+            let pkmData = {
                 img: p.sprites.front_default,
                 nombre: p.name
             }
