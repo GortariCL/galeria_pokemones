@@ -42,7 +42,7 @@ http.createServer((req, res) => {
     }
     //requerimiento 3
     if(req.url == '/pokemones'){
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.writeHead(200, { 'Content-Type': 'application/json' });
         fs.writeFile('pokemones.json', JSON.stringify(pokemones),(err, pokemon) =>{
             console.log('Archivo creado con exito');
         });
